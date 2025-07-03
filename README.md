@@ -176,6 +176,5 @@ The weights for these components can be customized in the frontend interface.
 
 ## Notes
 
-- The model used is `all-MiniLM-L6-v2` from Sentence-Transformers
 - The API returns top 10 matches by default
 - Make sure to handle PDF/DOCX text extraction before sending to the API 
