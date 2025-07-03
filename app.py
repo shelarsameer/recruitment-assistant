@@ -13,6 +13,13 @@ load_dotenv()
 app = Flask(__name__)
 
 # Initialize the models
+import spacy
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    import spacy.cli
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 model = SentenceTransformer('all-MiniLM-L6-v2')
 nlp = spacy.load("en_core_web_sm")
 
