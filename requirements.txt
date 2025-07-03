@@ -1,3 +1,6 @@
+# For Streamlit Cloud, use Python 3.10 or 3.11 for compatibility
+# torch is required by sentence-transformers and will be installed automatically with a compatible version
+# torch==2.1.2  # <-- Do NOT pin torch version here; let sentence-transformers handle it
 flask==2.3.3
 sentence-transformers==2.2.2
 huggingface-hub==0.16.4
@@ -8,7 +11,6 @@ gunicorn==21.2.0
 pandas==2.1.4
 pillow==10.2.0
 nltk==3.9.1
-torch==2.1.2
 streamlit==1.29.0
 PyMuPDF==1.23.3
 transformers==4.35.2
