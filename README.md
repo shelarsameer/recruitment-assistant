@@ -176,5 +176,4 @@ The weights for these components can be customized in the frontend interface.
 
 ## Notes
 
-- The API returns top 10 matches by default
 - Make sure to handle PDF/DOCX text extraction before sending to the API 
